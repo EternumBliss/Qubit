@@ -1,0 +1,27 @@
+.award{
+  padding-bottom: 44px;
+  &__image{
+    width: 140px;
+    margin: 0 auto;
+    height: 182px;
+    display: block;
+  }
+  &__text{
+    @include text(16px, black, 45px, 400);
+    text-align: center;
+    margin-top: 29px;
+  }
+
+  &__list{
+    width: 250px;
+    margin: 27px auto;
+  }
+
+  li{
+    display: inline;
+    margin-left: 30px;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+}

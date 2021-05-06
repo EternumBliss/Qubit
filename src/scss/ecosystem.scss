@@ -1,0 +1,27 @@
+.ecosystem{
+  background-color: #F5F5F5;
+
+  &__title{
+    @include text(40px, black, 45px, 700);
+    margin-top: 169px;
+  }
+  &__text1{
+    @include text(13px, black, 30px, 400);
+    margin-top: 47px;
+  }
+  &__text2{
+    @include text(13px, black, 30px, 400);
+    width: 571px;
+    margin-top: 11px;
+  }
+  &__btn{
+    @include text(14px, white, 14px, 700);
+    width: 203px;
+    height: 40px;
+    border: none;
+    background-color: $spqr;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 74px;
+  }
+}

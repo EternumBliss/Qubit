@@ -1,0 +1,39 @@
+@import "../libs/bootstrap/bootstrap-grid.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+$spqr: #6F2CFF;
+
+@mixin text($fs, $cr, $lh, $fw){
+  font-family: Roboto, sans-serif;
+  font-size: $fs;
+  color: $cr;
+  line-height: $lh;
+  font-weight: $fw;
+}
+
+
+
+@import "header";
+@import "hero";
+@import "sponsors";
+@import "advantages";
+@import "commerce";
+@import "power";
+@import "features";
+@import "brands";
+@import "specialize";
+@import "ecosystem";
+@import "demo";
+@import "award";
+@import "footer";

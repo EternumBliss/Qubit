@@ -1,0 +1,31 @@
+.commerce{
+  padding: 94px 0 91px 0;
+
+  &__title{
+    @include text(40px, black, 45px, 700);
+    margin-bottom: 22px;
+    text-align: center;
+  }
+  &__subtitle{
+    @include text(18px, black, 30px, 400);
+    margin-bottom: 46px;
+    text-align: center;
+  }
+  &__img{
+    display: block;
+    margin: auto;
+  }
+  & h3{
+    @include text(19px, black, 23px, 700);
+    text-align: center;
+    margin-top: 50px;
+  }
+  & p{
+    @include text(15px, black, 15px, 400);
+    text-align: center;
+    margin-top: 16px;
+  }
+
+
+
+}

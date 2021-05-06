@@ -1,0 +1,47 @@
+.power {
+  padding: 94px 0 115px 0;
+  background-color: #F5F5F5;
+
+  &__title {
+    @include text(40px, black, 45px, 700);
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    @include text(15px, black, 30px, 400);
+    margin-bottom: 90px;
+    text-align: center;
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__btns {
+    width: 398px;
+    margin: auto;
+
+
+  }
+
+  &__button-1 {
+    @include text(15px, white, 15px, 400);
+    width: 189px;
+    height: 40px;
+    background-color: $spqr;
+    border-radius: 30px;
+    border: none;
+
+  }
+
+  &__button-2 {
+    @include text(15px, $spqr, 15px, 400);
+    width: 187px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+  }
+}

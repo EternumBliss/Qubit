@@ -1,0 +1,64 @@
+.advantages{
+  .row{
+    margin-bottom: 108px;
+  }
+
+  &__title{
+    @include text(40px, black, 45px, 700);
+    margin-top: 177px;
+    margin-bottom: 58px;
+  }
+  &__btn{
+    @include text(15px, white, 15px, 400);
+    width: 187px;
+    height: 40px;
+    background-color: $spqr;
+    border: 1px solid $spqr;
+    border-radius: 30px;
+  }
+  &__meetCustomers{
+    @include text(14px, black, 14px, 700);
+    margin-left: 22px;
+    text-decoration: none;
+    border-bottom: 1px solid #6F2DFF;
+  }
+  &__PwC{
+    @include text(15px, black, 30px, 400);
+    margin-top: 56px;
+    margin-bottom: 7px;
+  }
+  &__report{
+    @include text(15px, black, 15px, 400)
+  }
+
+  &__other-1{
+    margin-top: 8px;
+    & h1{
+      @include text(40px, black, 45px, 700);
+    }
+    & p{
+      @include text(15px, black, 22px, 400);
+      margin-top: 15px;
+    }
+  }
+  &__other-2{
+    margin-top: 116px;
+    & h1{
+      @include text(40px, black, 45px, 700)
+    }
+    & p{
+      @include text(15px, black, 22px, 400);
+      margin-top: 15px;
+    }
+  }
+  &__other-3{
+    margin-top: 116px;
+    & h1{
+      @include text(40px, black, 45px, 700)
+    }
+    & p{
+      @include text(15px, black, 22px, 400);
+      margin-top: 15px;
+    }
+  }
+}

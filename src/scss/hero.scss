@@ -1,0 +1,50 @@
+.hero{
+  height: 695px;
+  background-image: url("../images/hero/bg.png");
+  padding: 134px 0 200px 0;
+  &__content{
+    max-width: 456px;
+    input{
+      height: 45px;
+      width: 265px;
+      border-top: 1px solid $spqr;
+      border-left: .5px solid $spqr;
+      border-bottom: 1px solid $spqr;
+      border-radius: 27.5px 0 0 27.5px;
+      outline: none;
+      padding: 13px 0 11px 26px;
+    }
+    button{
+      @include text(15px, white, 21px, 400);
+      height: 45px;
+      width: 187px;
+      background-color: $spqr;
+      border-radius: 0 27.5px 27.5px 0;
+      outline: none;
+      border-top: 1px solid $spqr;
+      border-right: 1px solid $spqr;
+      border-bottom: 1px solid $spqr;
+      border-left: 1px solid $spqr;
+    }
+  }
+  &__content p{
+    &:first-child {
+      @include text(15px, black, 21px, 400);
+      margin-bottom: 19px;
+    }
+    &:nth-child(2){
+      @include text(54px, black, 61px, 700);
+    }
+    &:nth-child(3){
+      @include text(54px, #6F2DFF, 54px, 700);
+      margin-bottom: 37px;
+    }
+    &:nth-child(4){
+      @include text(18px, black, 30px, 400);
+      margin-bottom: 4px;
+      span{
+        font-weight: 900;
+      }
+    }
+  }
+}

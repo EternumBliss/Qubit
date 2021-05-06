@@ -1,0 +1,26 @@
+.features{
+  padding: 94px 0 220px 0;
+  &__title{
+    @include text(40px, black, 45px, 700);
+    text-align: center;
+    margin-bottom: 28.25px;
+  }
+  &__img{
+    display: block;
+    margin: 0 auto;
+  }
+  &__firstRow{
+    margin-bottom: 84px;
+  }
+
+
+}
+.features h3{
+  @include text(19px, black, 45px, 700);
+  text-align: center;
+}
+.features p{
+  @include text(15px, black, 22px, 400);
+  text-align: center;
+}
+

@@ -1,0 +1,26 @@
+.footer{
+  padding: 57px 0 82px 0;
+  background-color: #20003C;
+  &__title{
+    @include text(16px, white, 20.8px, 700);
+  }
+  &__hiddenTitle{
+    color: #20003C;
+  }
+  ul{
+    margin-top: 30px;
+  }
+  li{
+    @include text(14px, white, 18.2px, 400);
+    margin-top: 11px;
+  }
+  &__img1{
+    display: block;
+    margin: 45px auto;
+
+  }
+  &__img2{
+    display: block;
+    margin: 24px auto;
+  }
+}

@@ -1,0 +1,44 @@
+.header{
+  width: 1440px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  &__logo{
+    margin-left: 30px;
+    width: 79px;
+    height: 24px;
+    margin-top: 20px;
+  }
+  &__menu{
+    @include text(14px, black, 14px, 400);
+    display: flex;
+    height: 14px;
+    list-style-type: none;
+    column-gap: 42px;
+    margin-top: 22px;
+  }
+
+  &__right{
+    margin-right: 30px;
+    display: flex;
+  }
+
+  &__btn{
+    @include text(14px, white, 14px, 400);
+    height: 40px;
+    width: 157px;
+    border: 1px solid blue;
+    border-radius: 20px;
+    background-color: $spqr;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  &__logIn{
+    @include text(14px, black, 14px, 400);
+    margin-left: 38px;
+    margin-top: 21px;
+  }
+}
