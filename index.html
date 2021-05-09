@@ -13,21 +13,25 @@
 <body>
 <main>
     <header class="header">
-        <div class="header__logo"><img src="src/images/header/logo.svg" alt=""></div>
-        <nav>
+        <div class="header__logo-burger"><img src="src/images/header/logo.svg" alt=""></div>
+        <nav class="header__nav">
+            <div class="header__logo"><img src="src/images/header/logo.svg" alt=""></div>
             <ul class="header__menu">
-                <li>Why Qubit?</li>
-                <li>Products</li>
-                <li>Solutions</li>
-                <li>Customers</li>
-                <li>Case studies</li>
-                <li>Resources</li>
-                <li>More</li>
+                <li class="header__item">Why Qubit?</li>
+                <li class="header__item">Products</li>
+                <li class="header__item">Solutions</li>
+                <li class="header__item">Customers</li>
+                <li class="header__item">Case studies</li>
+                <li class="header__item">Resources</li>
+                <li class="header__item">More</li>
             </ul>
+            <div class="header__right">
+                <div class="header__btn">Book a demo</div>
+                <div class="header__logIn">Log In</div>
+            </div>
         </nav>
-        <div class="header__right">
-            <div class="header__btn">Book a demo</div>
-            <div class="header__logIn">Log In</div>
+        <div class="vafli">
+            <span class="vafli-line"></span>
         </div>
     </header>
     <section class="hero">
@@ -39,7 +43,8 @@
                 <p>Hundreds of brands use <span>Qubit CommerceAI</span> to power the next generation of product
                     recommendations, badging
                     and insights to build exceptional customer experiences</p>
-                <label><input placeholder="Enter your email" type="email"></label><button>Book a demo</button>
+                <label><input placeholder="Enter your email" type="email"></label>
+                <button>Book a demo</button>
             </div>
         </div>
     </section>
@@ -62,7 +67,7 @@
     <section class="advantages">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <h1 class="advantages__title">Grow 2.5x faster than your competitors</h1>
                     <div>
                         <button class="advantages__btn">Book a demo</button>
@@ -107,20 +112,20 @@
         <h1 class="commerce__title">Qubit CommerceAI.</h1>
         <h3 class="commerce__subtitle">The new way to drive growth.</h3>
         <div class="row">
-            <div class="col-4">
+            <div class="col-6 col-sm-6">
                 <img class="commerce__img" src="src/images/commerce/image1.svg" alt="">
                 <h3>More insight</h3>
                 <p>Learn which products drive performance and <br>which don't, through automated insights you <br> can
                     action.</p>
             </div>
-            <div class="col-4">
+            <div class="col-6 col-sm-6">
                 <img class="commerce__img" src="src/images/commerce/image2.svg" alt="">
                 <h3>More personal</h3>
                 <p>Qubit CommerceAI generates a model per <br> shopper to make every customer interaction <br> more
                     relevant.</p>
             </div>
-            <div class="col-4">
-                <img class="commerce__img" src="src/images/commerce/image3.svg" alt="">
+            <div class="col-12 col-sm-6">
+                <img class="commerce__img" id="commerce__last" src="src/images/commerce/image3.svg" alt="">
                 <h3>More personal</h3>
                 <p>Qubit fuses data, intent, and design tools to <br> enable your team to create more effective <br>
                     customer experiences.</p>
@@ -188,21 +193,24 @@
                 <div class="owl-stage-outer">
                     <div class="owl-stage">
                         <div class="owl-item">
-                            <div class="brands__item"><img src="src/images/brands/image1.png" alt="">
+                            <div class="brands__item"><img class="brands__item-image" src="src/images/brands/image1.png"
+                                                           alt="">
                                 <img class="brands__card-image" src="src/images/brands/clinique.png" alt="">
                                 <p class="brands__card-txt">Clinique builds relationships with millions of customers
                                     each year.</p>
                             </div>
                         </div>
                         <div class="owl-item">
-                            <div class="brands__item"><img src="src/images/brands/image2.png" alt="">
+                            <div class="brands__item"><img class="brands__item-image" src="src/images/brands/image2.png"
+                                                           alt="">
                                 <img class="brands__card-image" src="src/images/brands/riverisland.png" alt="">
                                 <p class="brands__card-txt">River Island transforms the customer experience with
                                     personalization.</p>
                             </div>
                         </div>
                         <div class="owl-item">
-                            <div class="brands__item"><img src="src/images/brands/image3.png" alt="">
+                            <div class="brands__item"><img class="brands__item-image" src="src/images/brands/image3.png"
+                                                           alt="">
                                 <img class="brands__card-image3" src="src/images/brands/mandm.png" alt="">
                                 <p class="brands__card-txt">MandM Direct drives increase in revenue with deep
                                     learning recs</p>
@@ -222,7 +230,7 @@
             <h1 class="specialize__title">We specialize in your industry.</h1>
             <div class="specialize__subtitle">Learn how we are delivering personalization at scale across sectors.</div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 col-sm-12 col-md-12">
                     <div class="specialize__box">
                         <div class="specialize__box-title">
                             <img class="specialize__box-image" src="src/images/specialize/image1.png" alt="">
@@ -234,7 +242,7 @@
                         <div class="specialize__box-line"></div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-sm-12 col-md-12">
                     <div class="specialize__box">
                         <div class="specialize__box-title">
                             <img class="specialize__box-image" src="src/images/specialize/image2.png" alt="">
@@ -248,7 +256,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 col-sm-12 col-md-12">
                     <div class="specialize__box">
                         <div class="specialize__box-title">
                             <img class="specialize__box-image" src="src/images/specialize/image3.png" alt="">
@@ -259,7 +267,7 @@
                         <div class="specialize__box-line"></div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-sm-12 col-md-12">
                     <div class="specialize__box">
                         <div class="specialize__box-title">
                             <img class="specialize__box-image" src="src/images/specialize/image4.png" alt="">
@@ -273,7 +281,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 col-sm-12 col-md-12">
                     <div class="specialize__box">
                         <div class="specialize__box-title">
                             <img class="specialize__box-image" src="src/images/specialize/image5.png" alt="">
@@ -284,7 +292,7 @@
                         <div class="specialize__box-line"></div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-sm-12 col-md-12">
                     <div class="specialize__box">
                         <div class="specialize__box-title">
                             <img class="specialize__box-image" src="src/images/specialize/image6.png" alt="">
@@ -302,7 +310,7 @@
     <section class="ecosystem">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 col-sm-12 col-md-12">
                     <h1 class="ecosystem__title">A connected ecosystem.</h1>
                     <p class="ecosystem__text1">The Qubit personalization platform is designed with enterprise and
                         high-growth businesses in
@@ -312,7 +320,8 @@
                         across any channel.</p>
                     <button class="ecosystem__btn">See our integrations</button>
                 </div>
-                <div class="col-6"><img src="src/images/ecosystem/image1.png" alt=""></div>
+                <div class="col-6 col-sm-12 col-md-12"><img class="ecosystem__img" src="src/images/ecosystem/image1.png"
+                                                            alt=""></div>
             </div>
 
         </div>
@@ -352,7 +361,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-2">
+                <div class="col-2 col-sm-12 col-md-4">
                     <h3 class="footer__title">Featured Capabilities</h3>
                     <ul>
                         <li>A/B testing</li>
@@ -364,7 +373,7 @@
                         <li>Ecommerce merchandising</li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-2 col-sm-12 col-md-4">
                     <h3 class="footer__hiddenTitle">1</h3>
                     <ul>
                         <li>Custom machine learning</li>
@@ -375,7 +384,7 @@
                         <li>Website personalization</li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-2 col-sm-12 col-md-4">
                     <h3 class="footer__title">Products</h3>
                     <ul>
                         <li>1:1 Product recommendations</li>
@@ -385,7 +394,7 @@
                         <li>Product insights</li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-2 col-sm-12 col-md-4">
                     <h3 class="footer__title">Resources</h3>
                     <ul>
                         <li>Resources</li>
@@ -394,7 +403,7 @@
                         <li>Glossary</li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-2 col-sm-12 col-md-4">
                     <h3 class="footer__title">Company</h3>
                     <ul>
                         <li>Why Qubit?</li>
@@ -404,7 +413,7 @@
                         <li>Contact</li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-2 col-sm-12 col-md-4">
                     <h3 class="footer__title">Working with us</h3>
                     <ul>
                         <li>Legal</li>
