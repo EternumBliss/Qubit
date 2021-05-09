@@ -1,44 +1,53 @@
-.specialize{
+.specialize {
   padding: 94px 0 100px 0;
-  &__title{
+
+  &__title {
     @include text(40px, black, 45px, 700);
     text-align: center;
     margin-bottom: 12px;
   }
-  &__subtitle{
+
+  &__subtitle {
     @include text(18px, black, 30px, 400);
     text-align: center;
   }
-  &__box{
+
+  &__box {
 
     width: 460px;
     height: 199px;
     background-color: #17002E;
     border-radius: 8px 10px 10px 8px;
     padding: 30px 0 0 30px;
-    &-image{
+
+    &-image {
       width: 50px;
       height: 50px;
     }
-    &-title{
+
+    &-title {
       @include text(18px, white, 43px, 700);
       width: 270px;
       height: 50px;
       display: flex;
     }
-    &-title p{
+
+    &-title p {
       margin-left: 20px;
     }
-    &-content1{
+
+    &-content1 {
       @include text(15px, white, 22px, 400);
       margin-top: 18px;
       width: 380px;
     }
-    &-content2{
+
+    &-content2 {
       @include text(15px, white, 15px, 400);
       margin-top: 8px;
     }
-    &-line{
+
+    &-line {
       width: 358px;
       height: 2px;
       background-color: white;
@@ -47,9 +56,14 @@
   }
 }
 
-.row{
+.specialize > .container > .row {
   margin-top: 30px;
-  &:first-child {
-  margin-top: 0
-  }
+  column-gap: 30px;
+  row-gap: 30px;
+
+}
+
+.specialize > .container > .row > .col-12 {
+  justify-content: center;
+  display: flex;
 }

@@ -13,6 +13,9 @@
   .container {
     max-width: 1024px;
   }
+  .power__img{
+    width: calc( 100% - 144px);
+  }
   .header__logo-burger{
     display: flex;
     margin-left: 30px;
@@ -61,6 +64,10 @@
       }
     }
   }
+  .sponsors__images{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .vafli.active {
     z-index: 3;
 
@@ -89,13 +96,14 @@
     flex-direction: column;
     width: 50%;
     position: fixed;
-    top: -22px;
+    top: 0;
     right: 0;
     background-color: rgba(128, 128, 128, 0.75);
     border-radius: 10px;
-    height: 75vh;
+    height: 100vh;
     justify-content: flex-start;
     z-index: 2;
+    padding: 22px 0 22px 0;
   }
   .header__menu{
     flex-direction: column;
@@ -119,10 +127,11 @@
     max-width: 960px;
   }
 
-  .power__img {
-    width: 694px;
-    left: 50%;
+  .power__img{
+    width: calc( 100% - 104px);
   }
+
+
   .ecosystem__img {
     width: 500px;
     margin-top: 45px;
@@ -152,6 +161,15 @@
   .footer__title {
     margin-top: 25px;
   }
+  .power__img{
+    width: calc( 100% - 64px);
+  }
+}
+
+  @media (min-width: 576px) {
+  .commerce > .row {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 576px) {
@@ -162,15 +180,14 @@
     margin-top: 25px;
   }
   .power {
-    padding: 0 0 25px 0;
+    padding: 44px 0 55px 0;
   }
-  .power__img {
-    width: 381px;
-    height: 214px;
-    margin-bottom: 25px;
-  }
+
   .features {
     padding: 0;
+  }
+  .commerce > .row{
+    justify-content: center;
   }
   .features h3 {
     line-height: 19px;
