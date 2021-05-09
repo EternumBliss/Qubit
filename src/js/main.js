@@ -13,5 +13,9 @@ $(document).ready(function(){
         // With optional speed parameter
         // Parameters has to be in square bracket '[]'
         owl.trigger('prev.owl.carousel', [300]);
+    });
+
+    $('.vafli').on('click',function () {
+        $('.vafli , .header__nav').toggleClass('active')
     })
 });

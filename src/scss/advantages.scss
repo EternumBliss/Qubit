@@ -33,6 +33,16 @@
 
   &__other-1{
     margin-top: 8px;
+    position: relative;
+    &::before{
+      content: "";
+      width: 1px;
+      height: 660px;
+      position: absolute;
+      background-color: red;
+      left: -16.5px;
+      transform: translateX(-100%);
+    }
     & h1{
       @include text(40px, black, 45px, 700);
     }
@@ -43,6 +53,7 @@
   }
   &__other-2{
     margin-top: 116px;
+
     & h1{
       @include text(40px, black, 45px, 700)
     }
@@ -53,6 +64,7 @@
   }
   &__other-3{
     margin-top: 116px;
+
     & h1{
       @include text(40px, black, 45px, 700)
     }
