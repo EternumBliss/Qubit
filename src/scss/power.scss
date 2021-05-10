@@ -21,9 +21,11 @@
   }
 
   &__btns {
-    width: 398px;
-    margin: auto;
-
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
 
   }
 
@@ -34,15 +36,20 @@
     background-color: $spqr;
     border-radius: 30px;
     border: none;
-
+    margin-bottom: 15px;
   }
 
   &__button-2 {
     @include text(15px, $spqr, 15px, 400);
     width: 187px;
+    cursor: pointer;
     height: 40px;
     border-radius: 30px;
     border: none;
     background-color: white;
+    &:hover{
+      background-color: $spqr;
+      color: white;
+    }
   }
 }

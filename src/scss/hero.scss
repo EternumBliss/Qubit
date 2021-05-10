@@ -25,6 +25,11 @@
       border-right: 1px solid $spqr;
       border-bottom: 1px solid $spqr;
       border-left: 1px solid $spqr;
+      cursor: pointer;
+      &:hover{
+        background-color: white;
+        color: $spqr;
+      }
     }
   }
   &__content p{
