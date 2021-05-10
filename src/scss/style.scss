@@ -22,6 +22,25 @@ $spqr: #6F2CFF;
   font-weight: $fw;
 }
 
+.go-top{
+  @include text(16px, white, 0, 700);
+  width: 100px;
+  height: 25px;
+  background-color: $spqr;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  display: none;
+  cursor: pointer;
+  line-height: 25px;
+}
+
 
 
 @import "header";
@@ -38,3 +57,4 @@ $spqr: #6F2CFF;
 @import "award";
 @import "footer";
 @import "media";
+@import "overlay";

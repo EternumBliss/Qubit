@@ -40,6 +40,11 @@
     color: white;
     text-align: center;
     line-height: 40px;
+    cursor: pointer;
+    &:hover{
+      background-color: white;
+      color: $spqr;
+    }
   }
 
   &__logIn{

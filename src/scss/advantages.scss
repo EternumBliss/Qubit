@@ -15,6 +15,11 @@
     background-color: $spqr;
     border: 1px solid $spqr;
     border-radius: 30px;
+    cursor: pointer;
+    &:hover{
+      background-color: white;
+      color: $spqr;
+    }
   }
   &__meetCustomers{
     @include text(14px, black, 14px, 700);

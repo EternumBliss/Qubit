@@ -13,6 +13,7 @@
   li{
     @include text(14px, white, 18.2px, 400);
     margin-top: 11px;
+    list-style-type: none;
   }
   &__img1{
     display: block;

@@ -1,5 +1,5 @@
 .demo{
-  padding: 93px 0 107px 0;
+  padding: 93px 0 191px 0;
   background: url("../images/demo/bg.png") top left/100% 100% no-repeat;
   &__title{
     @include text(40px, white, 45px, 700);
@@ -14,6 +14,10 @@
     border-radius: 27.5px 0 0 27.5px;
     outline: none;
     padding: 13px 0 11px 26px;
+    margin-top: 39px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-100%);
   }
   button{
     @include text(15px, white, 21px, 400);
@@ -26,9 +30,18 @@
     border-right: 1px solid $spqr;
     border-bottom: 1px solid $spqr;
     border-left: 1px solid $spqr;
-  }
-  &__btn{
-    margin: 39px auto;
-    width: 456px;
+    margin-top: 39px;
+    position: absolute;
+    left: 50%;
+    cursor: pointer;
+    &:hover{
+      color: $spqr;
+      background-color: white;
+    }
   }
 }
+
+.demo > .container{
+  position: relative;
+}
+
