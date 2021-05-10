@@ -28,7 +28,7 @@
     text-decoration: none;
     color: black;
   }
-  &__item:hover{
+  &__item > a:hover{
     color: white;
     cursor: pointer;
   }
