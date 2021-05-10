@@ -69,7 +69,7 @@
   text-decoration: none;
   color: black;
 }
-.header__item:hover {
+.header__item > a:hover {
   color: white;
   cursor: pointer;
 }
