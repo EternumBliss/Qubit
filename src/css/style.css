@@ -63,6 +63,15 @@
   list-style-type: none;
   column-gap: 42px;
   margin-top: 22px;
+  text-decoration: none;
+}
+.header__item > a {
+  text-decoration: none;
+  color: black;
+}
+.header__item:hover {
+  color: white;
+  cursor: pointer;
 }
 .header__right {
   margin-right: 30px;
@@ -97,6 +106,9 @@
   font-weight: 400;
   margin-left: 38px;
   margin-top: 21px;
+}
+.header__logIn:hover {
+  color: white;
 }
 
 .hero {
@@ -493,6 +505,10 @@
   width: 320px;
   background-color: white;
 }
+.brands__item-image {
+  width: 320px;
+  height: 205px;
+}
 .brands__card {
   width: 320px;
   height: 233px;
@@ -682,7 +698,7 @@
   padding: 13px 0 11px 26px;
   margin-top: 39px;
   position: absolute;
-  left: 50%;
+  left: 53%;
   transform: translateX(-100%);
 }
 .demo button {
@@ -702,7 +718,7 @@
   border-left: 1px solid #6F2CFF;
   margin-top: 39px;
   position: absolute;
-  left: 50%;
+  left: 53%;
   cursor: pointer;
 }
 .demo button:hover {
@@ -891,11 +907,11 @@
   }
 
   .header__right {
-    margin-top: 640px;
+    margin-top: 275px;
   }
 
   .header__item {
-    margin-top: 75px;
+    margin-top: 25px;
     font-size: 25px;
   }
 
@@ -910,6 +926,11 @@
 
   .power__img {
     width: calc(100% - 100px);
+  }
+
+  .header__right {
+    flex-wrap: wrap;
+    display: flex;
   }
 
   .ecosystem__img {
@@ -960,7 +981,16 @@
 }
 @media (max-width: 576px) {
   .container {
-    max-width: 540px;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .header__right {
+    justify-content: center;
+  }
+
+  .header__logIn {
+    margin-left: 0;
   }
 
   .ecosystem__img {

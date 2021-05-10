@@ -111,10 +111,10 @@
     flex-direction: column;
   }
   .header__right {
-    margin-top: 640px;
+    margin-top: 275px;
   }
   .header__item {
-    margin-top: 75px;
+    margin-top: 25px;
     font-size: 25px;
   }
   .header__logIn {
@@ -130,6 +130,11 @@
 
   .power__img {
     width: calc(100% - 100px);
+  }
+
+  .header__right{
+    flex-wrap: wrap;
+    display: flex;
   }
 
 
@@ -177,7 +182,14 @@
 
 @media (max-width: 576px) {
   .container {
-    max-width: 540px;
+      flex-wrap: wrap;
+      display: flex;
+  }
+  .header__right{
+   justify-content: center;
+  }
+  .header__logIn{
+    margin-left: 0;
   }
   .ecosystem__img {
     width: calc(100% - 20px);
