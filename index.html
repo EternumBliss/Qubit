@@ -412,19 +412,19 @@
             <p class="award__text">Connect with us</p>
             <ul class="award__list">
                 <li>
-                    <img src="src/images/award/image1.svg" alt="">
+                    <a href="https://www.facebook.com/qubit/"><img src="src/images/award/image1.svg" alt=""></a>
                 </li>
                 <li>
-                    <img src="src/images/award/image2.svg" alt="">
+                    <a href="https://twitter.com/qubit?lang=en"><img src="src/images/award/image2.svg" alt=""></a>
                 </li>
                 <li>
-                    <img src="src/images/award/image3.svg" alt="">
+                    <a href="https://www.linkedin.com/company/qubit-group"><img src="src/images/award/image3.svg" alt=""></a>
                 </li>
                 <li>
-                    <img src="src/images/award/image4.svg" alt="">
+                    <a href="https://www.instagram.com/qubit_inc/?hl=en"><img src="src/images/award/image4.svg" alt=""></a>
                 </li>
                 <li>
-                    <img src="src/images/award/image5.svg" alt="">
+                    <a href="https://www.youtube.com/channel/UCznw63XfUcBBpjZzP2QniQw"><img src="src/images/award/image5.svg" alt=""></a>
                 </li>
             </ul>
         </div>
@@ -443,16 +443,32 @@
                             <input class="book__input" type="text" placeholder="Your Name">
                         </label>
                         <label class="book__label">
-                            <input class="book__input" type="tel" placeholder="Your Phone Number">
+                            <input class="book__input" id="tel" type="tel" placeholder="Your Phone Number">
                         </label>
                         <label class="book__label">
-                            <input class="book__input" type="email" placeholder="Your E-mail">
+                            <input class="book__input" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" type="email" placeholder="Your E-mail">
                         </label>
                         <button class="book__btn">Book demo</button>
                     </form>
                 </div>
+                <div class="popup__logIn">
+                    <h3 class="popup__logIn-title">Welcome back!</h3>
+                    <p class="popup__logIn-subtitle">Please, enter your username and password below</p>
+                    <form class="logIn__form">
+                        <label class="logIn__label">
+                            <input class="logIn__input" placeholder="username" type="text">
+                        </label>
+                        <label class="logIn__label">
+                            <input class="logIn__input" placeholder="password" type="password">
+                        </label>
+                        <button class="logIn-btn">Log in</button>
+                    </form>
+                </div>
+                <div class="popup__thanks">
+                    <h2 class="popup__thanks-title">Thank you for booking a demo</h2>
+                    <p class="popup__thanks-subtitle">You will be notified when your demo will be ready</p>
+                </div>
                 <div class="popup__close"></div>
-
             </div>
         </div>
         <div class="container">
@@ -524,6 +540,7 @@
 </main>
 <script src="//code-eu1.jivosite.com/widget/l5JoS3XSJi" async></script>
 <script src="src/libs/jquery/jquery-3.6.0.min.js"></script>
+<script src="src/libs/inputmask/jquery.inputmask.js"></script>
 <script src="src/libs/owl-carousel/owl.carousel.min.js"></script>
 
 <script src="src/js/main.js"></script>
